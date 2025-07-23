@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aurora Vibe Mall</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        tr {
+            border: 2px solid black;
+        }
+        /* th {
+            border: 2px solid black;
+        } */
+        /* td {
+            border: 2px solid black;
+        } */
+        .eventHeader{
+            width: 700px;
+            height: 25px;
+            text-align: center;
+        }
+        .descHeader{
+            width: 500px;
+            height: 25px;
+            text-align: center;
+        }
+        .priceHeader {
+            width: 300px;
+            height: 25px;
+            text-align: center;
+        }
+        .eventCell{
+            width: 400px;
+            height: 300px;
+            text-align: center;
+        }
+        .eventCell img {
+          width: 200px;
+          height: 200px;
+          margin: auto;
+          border: 5px solid black;
+        }
+        .descCell{
+            width: 400px;
+            height: 300px;
+            text-align: center;
+        }
+        .priceCell {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="canadian-maple-leaf-brands.svg"/>
+    <a class="navbar-brand" href="#">Aurora Vibe Mall</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Zone
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="ShoppingZone.html">Elite Emporium</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="FoodZone.html">The Gourmet Gallery</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="FunZone.html">Thrill Arcade</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Library.html">MallTales Library</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="ChillnCafe.html">Chai & Chill Courtyard</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="YourCart.html">Your Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="YourOrders.html">Your Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="YourWallet.html">Your Wallet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Offers.html">Offers/Sales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Events.html">Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<table>
+        <thead>
+            <tr>
+                <th class="eventHeader">Events</th>
+                <th class="descHeader">Description</th>
+                <th class="priceHeader">Price (₹)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="eventCell"><img src="./EventDance.jpg"/></td>
+                <td class="descCell"><div>
+                  <h4>🎉 Dance Event</h4>
+                  <p><b>Get ready to move and groove at our high-energy Dance Event, 
+where rhythm meets passion! Whether you're a seasoned dancer or just want to 
+enjoy the vibe, this evening promises electrifying performances, upbeat tracks, 
+and a lively crowd. Join us for an unforgettable experience on the dance floor—all for 
+a nominal entry fee that ensures everyone can be part of the fun! (Event Id = 1)</b></p>
+<a href="./RegisterEvent.html">
+      <button type="button" class="btn btn-dark" id="eventDance" 
+      style="margin: 10px 20px;">Register Now!
+      </button></a>
+                </div></td>
+                <td class="priceCell">200 Rs</td>
+            </tr>
+            <tr>
+                <td class="eventCell"><img src="./EventMusic.jpeg"/></td>
+                <td class="descCell"><div>
+                <h4>🎵 Music Event</h4>
+<p><b>Immerse yourself in an evening of soulful melodies and live music at our 
+  exclusive Music Event. Featuring talented bands and solo artists across genres, 
+  this event is the perfect setting to unwind, sing along, or simply enjoy the beats. 
+  With a nominal ticket fee, we make great music accessible to all who appreciate the 
+  magic of live performances. (Event Id = 2)</b></p>
+<a href="./RegisterEvent.html">
+      <button type="button" class="btn btn-dark" id="eventMusic" 
+      style="margin: 10px 20px 10px 20px;">Register Now!
+      </button></a>
+                </div>
+              </td>
+                <td class="priceCell">150 Rs</td>
+            </tr>
+            <tr>
+                <td class="eventCell"><img src="./EventOpenMic.jpg"/></td>
+                <td class="descCell"><div>
+                <h4>🎤 Open Mic Night</h4>
+<p><b>Step into the spotlight or cheer on fresh talent at our vibrant Open Mic Night! 
+  From stand-up comedy and poetry to unplugged music and storytelling, this is your stage 
+  to express or enjoy raw creativity in its purest form. Entry comes at a small fee, making 
+  it an affordable and welcoming space for artists and audiences alike. (Event Id = 3)</b></p>
+<a href="./RegisterEvent.html">
+<button type="button" class="btn btn-dark" id="eventMusic" 
+      style="margin: 10px 20px;">Register Now!
+      </button></a>
+                </div></td>
+                <td class="priceCell">250 Rs</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <small class="d-block mb-3 text-body-secondary">© 2024-2025 Nexora Infra-Tech Pvt. Ltd.</small>
+          </div>
+      </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <script src="index.js"></script> -->
+</body>
+</html>

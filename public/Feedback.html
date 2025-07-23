@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Vibe Mall</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+    hr {
+    color: black;
+    border-top: 2px solid black;
+    opacity: 1;
+    }
+    .starCard {
+        max-width: 18rem;
+        background: #fff;
+        margin: 20px 10px;
+        padding: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        }
+        .star {
+        font-size: 30px;
+        cursor: pointer;
+        }
+        .one {
+        color: rgb(255, 0, 0);
+        }
+        .two {
+        color: rgb(255, 106, 0);
+        }
+        .three {
+        color: rgb(56, 195, 219);
+        }
+        .four {
+        color: rgb(53, 43, 238);
+        }
+        .five {
+        color: rgb(24, 159, 14);
+        }
+        #output {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card" style="width: 22rem;">
+  <div class="card-body">
+    <h5 class="card-title">Customer Feedback</h5>
+    <hr>
+    <form id="formFeedback"><label for="name">Name:</label><input type="text" id="nameInAboutUs" name="name"><br/>
+    <label for="Id">Customer Id:</label><input type="number" id="nameInAboutUs" name="custId"><br/>
+    <label for="mobno">Mobile No:</label><input type="number" id="nameInAboutUs" name="mobno"><br/>
+    <label for="feedback">Feedback:</label><textarea type="text" id="feedbackInput" name="feedback">
+    Write Your Feedback</textarea>
+    </form>
+    <div class="starCard">
+        <p><b>Rating:</b>
+        <div>
+        <span onclick="star(1)" class="star">★</span>
+        <span onclick="star(2)" class="star">★</span>
+        <span onclick="star(3)" class="star">★</span>
+        <span onclick="star(4)" class="star">★</span>
+        <span onclick="star(5)" class="star">★</span>
+        <h3 id="output">Rating is: 0/5</h3></div></p>
+    </div>
+    <div class="buttonInAboutUs">
+    <a href="AboutUs.html" class="btn btn-dark" type="button" id="gobackInAboutUS">Go Back</a>
+    <a href="#" class="btn btn-success" type="button" id="SubmitFeedback">Submit Form</a>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+// To access the stars
+let stars = 
+    document.getElementsByClassName("star");
+let output = 
+    document.getElementById("output");
+
+// Funtion to update rating
+function star(n) {
+    remove();
+    for (let i = 0; i < n; i++) {
+        if (n == 1) cls = "one";
+        else if (n == 2) cls = "two";
+        else if (n == 3) cls = "three";
+        else if (n == 4) cls = "four";
+        else if (n == 5) cls = "five";
+        stars[i].className = "star " + cls;
+    }
+    output.innerText = `Rating is:${n}/5`;
+}
+// To remove the pre-applied styling
+function remove() {
+    let i = 0;
+    while (i < 5) {
+        stars[i].className = "star";
+        i++;
+    }
+}
+    </script>
+</body>
+</html>
