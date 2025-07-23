@@ -2,6 +2,7 @@
 
 **Aurora Vibe Mall** is a dynamic and engaging mall experience brought to life as a web app. Built using **HTML, CSS, Bootstrap and JavaScript** for the frontend and powered by **Firebase** on the backend, this virtual mall enables users to explore zones, shop, manage their cart and wallet, and review past orders—all from their browser.
 
+Link: https://auroravibemallfirebaseapp.web.app
 ---
 
 ## 🌟 Key Features
